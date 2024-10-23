@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Audio Ad Muter",
+    "version": "1.0",
+    "description": "Mutes the Youtube Homepage.",
+    "author": "Newton667 https://github.com/Newton667",
+    "permissions": [
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://www.youtube.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
